@@ -1,10 +1,10 @@
 #include "mydoublespinbox.h"
 
-MyDoubleSpinBox::MyDoubleSpinBox(QWidget *parent) :
-    QDoubleSpinBox(parent)
+MyDoubleSpinBox::MyDoubleSpinBox(QWidget* parent)
+    : QDoubleSpinBox(parent)
 {
 }
 
-void MyDoubleSpinBox::wheelEvent ( QWheelEvent *  )
+void MyDoubleSpinBox::wheelEvent(QWheelEvent*)
 {
 }

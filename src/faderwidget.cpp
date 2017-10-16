@@ -25,41 +25,41 @@
 
 #include "faderwidget.h"
 
-FaderWidget::FaderWidget(QWidget *parent)
+FaderWidget::FaderWidget(QWidget* parent)
     : QWidget(parent)
 {
-	if (parent)
-		startBrush = parent->palette().window();
-	else
-		startBrush = Qt::white;
+    if (parent)
+        startBrush = parent->palette().window();
+    else
+        startBrush = Qt::white;
 
-	timeLine = new QTimeLine(250, this);
-	timeLine->setFrameRange(0, 1000);
-	connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update()));
-	connect(timeLine, SIGNAL(finished()),this, SIGNAL(sig_fertig()));
+    timeLine = new QTimeLine(250, this);
+    timeLine->setFrameRange(0, 1000);
+    connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update()));
+    connect(timeLine, SIGNAL(finished()), this, SIGNAL(sig_fertig()));
 
-	setAttribute(Qt::WA_DeleteOnClose);
-	resize(parent->size());
+    setAttribute(Qt::WA_DeleteOnClose);
+    resize(parent->size());
 }
 
 void FaderWidget::start()
 {
-	timeLine->start();
-	show();
+    timeLine->start();
+    show();
 }
 
 void FaderWidget::setFadeColor(QColor color)
 {
-	startBrush = color;
+    startBrush = color;
 }
 
-void FaderWidget::paintEvent(QPaintEvent * /* event */)
+void FaderWidget::paintEvent(QPaintEvent* /* event */)
 {
-	QPainter painter(this);
-	qreal frame = timeLine->currentFrame();
-	painter.setOpacity(frame / 1000.);
-	painter.fillRect(rect(), startBrush);
+    QPainter painter(this);
+    qreal frame = timeLine->currentFrame();
+    painter.setOpacity(frame / 1000.);
+    painter.fillRect(rect(), startBrush);
 
-	if (frame >= 1000)
-		close();
+    if (frame >= 1000)
+        close();
 }

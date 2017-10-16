@@ -38,18 +38,18 @@
 **
 ****************************************************************************/
 
-#include <QtWidgets>
 #include "previewer.h"
+#include <QtWidgets>
 
 //! [0]
-Previewer::Previewer(QWidget *parent)
+Previewer::Previewer(QWidget* parent)
     : QWidget(parent)
 {
     setupUi(this);
 }
 //! [0]
 
-void Previewer::setBaseUrl(const QUrl &url)
+void Previewer::setBaseUrl(const QUrl& url)
 {
     baseUrl = url;
 }

@@ -1,9 +1,10 @@
 #include "myspinbox.h"
 
-MySpinBox::MySpinBox(QWidget *parent) : QSpinBox(parent)
+MySpinBox::MySpinBox(QWidget* parent)
+    : QSpinBox(parent)
 {
 }
 
-void MySpinBox::wheelEvent ( QWheelEvent *  )
+void MySpinBox::wheelEvent(QWheelEvent*)
 {
 }

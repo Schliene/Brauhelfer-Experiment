@@ -1,46 +1,45 @@
 #ifndef ANHANGWIDGET_H
 #define ANHANGWIDGET_H
 
-#include <QWidget>
 #include <QDir>
+#include <QWidget>
 
 namespace Ui {
-  class AnhangWidget;
+class AnhangWidget;
 }
 
-class AnhangWidget : public QWidget
-{
-  Q_OBJECT
+class AnhangWidget : public QWidget {
+    Q_OBJECT
 
 public:
-  static bool isImage(const QString pfad);
+    static bool isImage(const QString pfad);
 
-  explicit AnhangWidget(QWidget *parent = 0);
-  ~AnhangWidget();
-  void setID(int value);
-  int getID() const;
-  QString getPfad() const;
-  QString getFullPfad() const;
-  void setPfad(const QString pfad);
-  void setBasisPfad(const QString basis);
+    explicit AnhangWidget(QWidget* parent = 0);
+    ~AnhangWidget();
+    void setID(int value);
+    int getID() const;
+    QString getPfad() const;
+    QString getFullPfad() const;
+    void setPfad(const QString pfad);
+    void setBasisPfad(const QString basis);
 
 signals:
-	void sig_vorClose(int ID);
-	void sig_Aenderung();
+    void sig_vorClose(int ID);
+    void sig_Aenderung();
 
 private slots:
-	void on_pushButton_close_clicked();
-	void on_lineEdit_editingFinished();
-	void on_pushButton_Browse_clicked();
-	void on_checkBox_Relativ_clicked();
+    void on_pushButton_close_clicked();
+    void on_lineEdit_editingFinished();
+    void on_pushButton_Browse_clicked();
+    void on_checkBox_Relativ_clicked();
 
 protected:
-	void closeEvent(QCloseEvent *event);
+    void closeEvent(QCloseEvent* event);
 
 private:
-  Ui::AnhangWidget *ui;
-  int ID;
-  QDir dir;
+    Ui::AnhangWidget* ui;
+    int ID;
+    QDir dir;
 };
 
 #endif // ANHANGWIDGET_H

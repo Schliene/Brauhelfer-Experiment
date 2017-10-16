@@ -3,17 +3,15 @@
 
 #include <QComboBox>
 
-class MyComboBox : public QComboBox
-{
+class MyComboBox : public QComboBox {
     Q_OBJECT
 public:
-    explicit MyComboBox(QWidget *parent = 0);
+    explicit MyComboBox(QWidget* parent = 0);
 
-		void wheelEvent ( QWheelEvent * e );
+    void wheelEvent(QWheelEvent* e);
 signals:
 
 public slots:
-
 };
 
 #endif // MYCOMBOBOX_H

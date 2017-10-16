@@ -38,7 +38,5 @@
 **
 ****************************************************************************/
 
-#include <QtWidgets>
 #include "mainwindow.h"
-
-
+#include <QtWidgets>
