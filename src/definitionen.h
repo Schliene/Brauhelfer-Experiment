@@ -36,20 +36,20 @@
 #define KONFIG_ORDNER "Gremmelsoft"
 
 //Programmname
-#define APP_NAME	"kleiner-brauhelfer"
+#define APP_NAME "kleiner-brauhelfer"
 #define APP_VERZEICHNIS ".kleiner-brauhelfer"
 
 #ifdef DEBUG
-  #define APP_KONFIG "kleiner-brauhelfer-test"
+#define APP_KONFIG "kleiner-brauhelfer-test"
 #else
-  #define APP_KONFIG "kleiner-brauhelfer"
+#define APP_KONFIG "kleiner-brauhelfer"
 #endif
 
 //URL für die Meldungen beim Start
 #ifdef DEBUG
-  #define MSG_URL "http://www.joerum.de/kleiner-brauhelfer/kb_meldungen_v2_test"
+#define MSG_URL "http://www.joerum.de/kleiner-brauhelfer/kb_meldungen_v2_test"
 #else
-  #define MSG_URL "http://www.joerum.de/kleiner-brauhelfer/kb_meldungen_v2"
+#define MSG_URL "http://www.joerum.de/kleiner-brauhelfer/kb_meldungen_v2"
 #endif
 
 //URL Anleitung
@@ -57,7 +57,6 @@
 
 //URL ETK
 #define URL_ETK "QDir::currentPath() + /PN/v3.html"
-
 
 //URL Refrakto
 #define URL_Seite "http://www.maischemalzundmehr.de/index.php?inhaltmitte=toolsrefraktorechner&ogbrix=15.2&fgbrix=9"
@@ -67,7 +66,6 @@
 
 //URL WasserB
 #define URL_WasserB "http://www.maischemalzundmehr.de/index.php?inhaltmitte=toolswasserrechner&sk43=3.3&ubi=mmol%2Fl&ca=37&uca=mg%2Fl&mg=22&umg=mg%2Fl&so4=13&uso4=mg%2Fl&cl=17&ucl=mg%2Fl&na=9.6&una=mg%2Fl&vol_total=20&vol_hg=10&pluscaso4=2&plusnacl=1.5&plusmilchsaeure=4&msprozent=80&ms1=Muenchner&mm1=3500&ms2=Pilsner&mm2=3000"
-
 
 //URL Braurechner
 #define URL_BR "http://www.braurechner.de"
@@ -80,18 +78,17 @@
 //URL Etiketten
 //#define URL_ETK "file:///D:/_AAB/index/Etiketten/Etikett.html"
 
-
 //Datenbankvorlage
-#define DB_VORLAGE	":/db/vorlage.sqlite"
+#define DB_VORLAGE ":/db/vorlage.sqlite"
 
 //Datenbank mir Rohstoffvorlagen
-#define DB_ROHSTOFFVORLAGE  ":/db/rohstofflisten.sqlite"
-#define DB_ROHSTOFFLISTEN  "rohstofflisten.sqlite"
+#define DB_ROHSTOFFVORLAGE ":/db/rohstofflisten.sqlite"
+#define DB_ROHSTOFFLISTEN "rohstofflisten.sqlite"
 //Userdatenbankname
 #ifdef DEBUG
-  #define DB_USER_NAME	"kb_daten_test.sqlite"
+#define DB_USER_NAME "kb_daten_test.sqlite"
 #else
-  #define DB_USER_NAME	"kb_daten.sqlite"
+#define DB_USER_NAME "kb_daten.sqlite"
 #endif
 
 //Maximale Anzahl Rasten
@@ -104,49 +101,49 @@
 //Farben
 
 //Farbe für Highlighted Text Style Auswahl
-#define FARBE_STYLE_HIGHLIGHT 0,85,255
+#define FARBE_STYLE_HIGHLIGHT 0, 85, 255
 
 //Farbe für Spalte in Brauübersicht Tabelle Skalierung X Achse für Diagramm
-#define FARBE_BRAUUEBERSICHT_SPALTE_ACHSE_X 164,164,164
-#define FARBE_BRAUUEBERSICHT_SPALTE_ACHSE_X_DARK 100,100,100
+#define FARBE_BRAUUEBERSICHT_SPALTE_ACHSE_X 164, 164, 164
+#define FARBE_BRAUUEBERSICHT_SPALTE_ACHSE_X_DARK 100, 100, 100
 //Farbe für Spalte in Brauübersicht Tabelle Daten für Linie 1
-#define FARBE_BRAUUEBERSICHT_SPALTE_L1 151,125,166
+#define FARBE_BRAUUEBERSICHT_SPALTE_L1 151, 125, 166
 //Farbe für Spalte in Brauübersicht Tabelle Daten für Linie 2
-#define FARBE_BRAUUEBERSICHT_SPALTE_L2 141,154,127
+#define FARBE_BRAUUEBERSICHT_SPALTE_L2 141, 154, 127
 
 //Farbe für Linie 1 in Diagramm Brauübersicht
-#define FARBE_BRAUUEBERSICHT_DIAGRAMM_L1 116,30,166
+#define FARBE_BRAUUEBERSICHT_DIAGRAMM_L1 116, 30, 166
 //Farbe für Linie 2 in Diagramm Brauübersicht
-#define FARBE_BRAUUEBERSICHT_DIAGRAMM_L2 56,104,2
+#define FARBE_BRAUUEBERSICHT_DIAGRAMM_L2 56, 104, 2
 
 //Farbe für Linie 1 in Diagramm Schnellgärprobe
-#define FARBE_GAERVERLAUF_DIAGRAMM_S_L1 116,30,166
+#define FARBE_GAERVERLAUF_DIAGRAMM_S_L1 116, 30, 166
 //Farbe für Linie 2 in Diagrmmm Schnellgärprobe
-#define FARBE_GAERVERLAUF_DIAGRAMM_S_L2 56,104,2
+#define FARBE_GAERVERLAUF_DIAGRAMM_S_L2 56, 104, 2
 //Farbe für Linie 3 in Diagrmmm Schnellgärprobe
-#define FARBE_GAERVERLAUF_DIAGRAMM_S_L3 170,0,0
+#define FARBE_GAERVERLAUF_DIAGRAMM_S_L3 170, 0, 0
 
 //Farbe für Linie 1 in Diagramm Hauptgärung
-#define FARBE_GAERVERLAUF_DIAGRAMM_H_L1 116,30,166
+#define FARBE_GAERVERLAUF_DIAGRAMM_H_L1 116, 30, 166
 //Farbe für Linie 2 in Diagrmmm Hauptgärung
-#define FARBE_GAERVERLAUF_DIAGRAMM_H_L2 56,104,2
+#define FARBE_GAERVERLAUF_DIAGRAMM_H_L2 56, 104, 2
 //Farbe für Linie 3 in Diagrmmm Hauptgärung
-#define FARBE_GAERVERLAUF_DIAGRAMM_H_L3 170,0,0
+#define FARBE_GAERVERLAUF_DIAGRAMM_H_L3 170, 0, 0
 
 //Farbe für Linie 1 in Diagramm Nachgärung
-#define FARBE_GAERVERLAUF_DIAGRAMM_N_L1 116,30,166
+#define FARBE_GAERVERLAUF_DIAGRAMM_N_L1 116, 30, 166
 //Farbe für Linie 2 in Diagrmmm Nachgärung
-#define FARBE_GAERVERLAUF_DIAGRAMM_N_L2 170,0,0
+#define FARBE_GAERVERLAUF_DIAGRAMM_N_L2 170, 0, 0
 
 //Farbe Bier ist in Reifung
-#define FARBE_BierReift 214,194,60
-#define FARBE_BierReift_DARK 147,130,12
+#define FARBE_BierReift 214, 194, 60
+#define FARBE_BierReift_DARK 147, 130, 12
 //Farbe Bier ist fertig
-#define FARBE_BierFertig 149,194,12
-#define FARBE_BierFertig_DARK 149,194,12
+#define FARBE_BierFertig 149, 194, 12
+#define FARBE_BierFertig_DARK 149, 194, 12
 //Farbe Bier ist Leer
-#define FARBE_BierLeer 255,255,255
-#define FARBE_BierLeer_DARK 34,34,34
+#define FARBE_BierLeer 255, 255, 255
+#define FARBE_BierLeer_DARK 34, 34, 34
 
 //Weitere Zutaten typen
 #define EWZ_Typ_Honig 0
@@ -234,7 +231,6 @@
 #define ERR_SQL_DB_UPDATE_V19_V20 132
 #define ERR_SQL_DB_UPDATE_V20_V21 133
 #define ERR_SQL_DB_UPDATE_V21_V22 134
-
 
 #define ERR_VERSION_SUD_V1 200
 #define ERR_VERSION_UNBEKANNT 201

@@ -44,14 +44,13 @@
 //#include "ui_previewer.h"
 
 //! [0]
-class Previewer : public QWidget, public Ui::Form
-{
+class Previewer : public QWidget, public Ui::Form {
     Q_OBJECT
 
 public:
-    Previewer(QWidget *parent = 0);
+    Previewer(QWidget* parent = 0);
 
-    void setBaseUrl(const QUrl &url);
+    void setBaseUrl(const QUrl& url);
 
 public slots:
     void on_previewButton_clicked();
